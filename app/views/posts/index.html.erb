@@ -1,0 +1,10 @@
+<% @posts.each do |post| %>
+    title : <%= post.title %>
+    content : <%= post.content %>
+    <a href="/posts/show/<%= post.id %>">보기</a>
+    <a href="/posts/edit/<%= post.id %>">수정</a>
+    <a href="/posts/destroy/<%= post.id %>">삭제</a>
+    <hr>
+<% end %>
+
+<a href="/posts/new">글 작성하러 가기</a>
